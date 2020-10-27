@@ -6,10 +6,13 @@ https://www.figma.com/file/lqS54H3xqo8ugQTtISsdgm/tesla?node-id=0%3A1
 task managing app URL:
 https://trello.com/wcsfirstproject/home
 
+media query breakpoints:
 
-initials tasks:
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
-Jacopo: git things
-Ioan: nav-bar html ideas
-Valentin: wireframes
-Lennart: wireframes
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
