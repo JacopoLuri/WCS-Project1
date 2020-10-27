@@ -16,3 +16,12 @@ Medium devices (tablets, 768px and up)
 
 Large devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
+
+pages in project:
+
+0 home
+1 about
+2 ecology/technology
+3 models
+4 hystory
+5 funny electric
