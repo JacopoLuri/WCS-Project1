@@ -25,3 +25,12 @@ pages in project:
 3 models
 4 hystory
 5 funny electric
+
+font for heading: font-family: 'Dancing Script', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+font for paragraphs: font-family: 'Karla', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+primary color: --bg-primary: #000;
+secondary: --copper-cryola: #da8a68;
