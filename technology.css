@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* =============
    Global styles
    ============= */
@@ -25,7 +26,10 @@
 body { 
    font-family: 'Karla', sans-serif; 
    font-size: 16px;  
-   font-weight: 400, 700;       
+   font-weight: 400, 700; 
+
+   /* position: relative;
+   top: 78px;     */
 }
 
 /* =============
@@ -38,16 +42,22 @@ body {
    Typography
    ============= */ 
 
-h1 {
+h2, h3 {
    font-family: 'Dancing Script', cursive;
    font-weight: 400;
+   text-decoration: underline;
+   font-size: 2rem;
+   margin: 40px 0;
 }
 
-.banner h1 {
-   font-size: 2.8rem;
-   color: var(--copper-cryola);
-   line-height: 1;
-   z-index: 1;   
+h3 {
+   font-size: 1.8rem;
+}
+
+p {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.5;
 }
 
 
@@ -182,35 +192,57 @@ nav ul li a:hover {
    transition: opacity .3s ease-in-out .3s;
 }
 
-/* Landing page styling */
 
-.banner-mobile {   
+/* Intro section styling */
+
+#technology--container{
    position: relative;
    top: 78px;
-   width: 100%;
+   margin: 20px;
 }
 
-.banner-desktop {
-   display: none;
+#intro--page{
+   margin: 10px;
+   text-align: center;
 }
 
-.banner {   
-   background-image: url(./assets/Background-Photos/background-mobile.jpg);   
-   background-size: cover;
-   background-repeat: no-repeat; 
-   background-position: center;     
+hr.line--break {
+   margin: 40px 0;
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* First cars section */
+
+#first--cars {
+   text-align: center;
+}
+
+.cards {
+   border: 1px solid #000;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;   
-   position: relative;  
-   padding: 95px 20px 80px 20px;
-   text-align: center;
-   height: 100vh;
-   width: 100vw;  
-   transform: scale(1.2); 
+   padding: 20px;
+   border-radius: 5px;
+   /* align-items: center; */
 }
 
+.cards img {
+   border-radius: 30px;
+}
+
+p.card--para {
+   font-size: 1rem;
+   margin: 20px 0;
+}
+
+
+
+
+
+/* 
 .color-overlay {
    position: absolute;
    width: 100%;
@@ -218,7 +250,101 @@ nav ul li a:hover {
    background: #000;
    opacity: .6;
    top: 0;
+} */
+
+
+
+
+
+
+
+/* =============
+   Components
+   ============= */
+
+.card--button {
+   background: var(--copper-cryola);
+   color: #000;
+   border: none;
+   border-radius: 5px;
+   position: relative;
+   height: 40px;
+   /* width: 150px; */
+   font-size: 1rem;
+   padding: 0 20px;
+   cursor: pointer;
+   outline: none;
+   transition: 800ms ease all;   
+   /* box-shadow: 0 5px 15px rgba(0,0,0,0.20);   */
 }
+
+.card--button:hover{
+   background:#fff;
+   color: var(--copper-cryola);
+}
+
+.card--button:before,
+.card--button:after{
+   content:'';
+   position:absolute;
+   top:0;
+   right:0;
+   height:2px;
+   width:0;
+   background: var(--copper-cryola);
+   transition:400ms ease all;
+}
+
+.card--button:after{
+   right:inherit; 
+   top:inherit;
+   left:0;
+   bottom:0;
+}
+
+.card--button:hover:before,
+.card--button:hover:after{
+   width:75%;
+   transition:800ms ease all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
