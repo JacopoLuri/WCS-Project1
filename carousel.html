@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oops-website</title>
+    <title>carousel</title>
     <style>
       #slider {
         overflow: hidden;
@@ -12,6 +12,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 40%;
+        height: auto;
         border: 5px solid black;
         
 
@@ -19,13 +20,14 @@
       #slider figure {
           position: relative;
           width: 500%;
+          height: auto;
           margin: 0;
           left: 0;
           animation: slider 25s linear infinite
       }
       #slider figure img {
           width: 20%;
-          height: 450px;
+          height: auto;
           float: left;
       }
       @keyframes slider {
@@ -53,11 +55,7 @@
           95% {
               left: -300%;
           }
-
-
-
-
-      }
+        }
     </style>
 </head>
 <body>
