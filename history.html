@@ -6,42 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>subpage</title>
     <style>
-        .info-div {
-            
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+        body {
+            background-color: #000;
+        }
+        h1 {
+            font-family: dancing script, cursive;
+            color: #da8a68;
+            text-align: center;
+        }
+        .lennart-info-div {
             margin: auto;
             width: 80%;
-            
-            border: 5px solid black;
             text-align: center;
             padding: 10px;
+            border: 3px double #ffffcc;
             
         }
-        img {
+        .lennart-img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 90%;
+            height: auto;
             margin-top: 20px;
             margin-bottom: 20px;
+            border: 4px solid black;
+            -webkit-box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86); 
+            box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86);
         }
-        p {
+        .len-p {
             padding: 20px;
+            color: #da8a68;
+            font-family: 'Karla', sans-serif;
+        }
+        .len-h3 { 
+            color: #da8a68;
+
         }
 
-        /* @media only screen and (min-width: 992px) {
-            .info-div {
+         @media only screen and (min-width: 992px) {
+            .lennart-info-div {
                 width: 40%;
                 float: left;
                 margin-left: 100px;
+                margin-bottom: 200px;
             }
-            img {
-                float: right;
-                max-width: 25%;
-                margin-right: 100px;
+            .lennart-img {
+                
+                max-width: 30%;
+                height: 30%;
+                
+                
+                
             }
+            .len-flex {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+            }
+         
                 
             
-        } */
+        } 
     </style>
 </head>
 <body>
@@ -50,33 +78,35 @@
    
    
     <!-- main content -->
-   
-    <h1>History</h1>
-
-    <div class="info-div">
-        <h3>title1</h3>
+    
+   <h1>History</h1>
+   <div class="len-flex">
+   <img class="lennart-img one" src="https://ak.picdn.net/shutterstock/videos/1034723993/thumb/4.jpg" alt="clock going back in time">
+    <div class="lennart-info-div first">
+        <h3 class= "len-h3">title1</h3>
+        <p class="len-p">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
         adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
         laborum earum eveniet harum pariatur itaque officia tenetur in ducimus. <br>
         <br>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
         adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus. 
+        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus. </p>
     </div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Thomas_Parker_Electric_car.jpg" alt="first electric car">
-    <div class="info-div">
-        <h3>title1</h3>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
+    <img class="lennart-img two" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Thomas_Parker_Electric_car.jpg" alt="first electric car">
+    <div class="lennart-info-div second">
+        <h3 class= "len-h3">title1</h3>
+    <p class="len-p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
         fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
         Vel aliquid tempore cupiditate reiciendis. Illo.<br>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
         adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
         laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.</p> 
     </div>
-    <img src="https://specials-images.forbesimg.com/imageserve/5f401a260ff9e641a5083a3b/960x0.jpg?fit=scale" alt="modern electric car">
-    <div class="info-div">
-        <h3>title1</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
+    <img class="lennart-img three" src="https://specials-images.forbesimg.com/imageserve/5f401a260ff9e641a5083a3b/960x0.jpg?fit=scale" alt="modern electric car">
+    <div class="lennart-info-div third">
+        <h3 class= "len-h3">title1</h3>
+        <p class="len-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
         fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
         Vel aliquid tempore cupiditate reiciendis. Illo.<br>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
@@ -88,18 +118,10 @@
         adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
         laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
         fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
-        Vel aliquid tempore cupiditate reiciendis. Illo.<br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
-        adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
-        fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
-        Vel aliquid tempore cupiditate reiciendis. Illo.<br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
-        adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus. </p>
+        Vel aliquid tempore cupiditate reiciendis. Illo.</p>
     </div>
 
-
+</div>
     <!-- footer -->
 </body>
 </html>
