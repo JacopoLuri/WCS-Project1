@@ -19,7 +19,7 @@ Large devices (desktops, 992px and up)
 
 pages in project:
 
-0 home
+0 index
 1 about
 2 ecology/technology
 3 models
