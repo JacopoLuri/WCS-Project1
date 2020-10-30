@@ -4,16 +4,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>subpage</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
         body {
-            background-color: #000;
+            
+            background: linear-gradient(120deg, #000000, #242424, #525252);
         }
         h1 {
             font-family: dancing script, cursive;
             color: #da8a68;
             text-align: center;
+            margin-top: 90px;
         }
         .lennart-info-div {
             margin: auto;
@@ -70,10 +73,44 @@
                 
             
         } 
+        
     </style>
 </head>
 <body>
-   <!-- header and navigation -->
+       <!-- Navigation bars -->
+       <header>        
+        <img src="./assets/Background-Photos/logo1.png" class="logo" alt="car-logo">
+
+        <!-- Mobile navigation bar -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eco-techno.html">Technology</a></li>              
+                <li><a href="models.html">Models</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="funny.html">Funny</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label" >
+            <span></span>
+        </label>
+
+
+        <!-- Desktop navigation bar -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eco-techno.html">Technology</a></li>              
+                <li><a href="models.html">Models</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="funny.html">Funny</a></li>
+            </ul>
+        </nav>  
+
+    </header>
    
    
    
@@ -83,11 +120,9 @@
    <div class="len-flex">
    <img class="lennart-img one" src="https://ak.picdn.net/shutterstock/videos/1034723993/thumb/4.jpg" alt="clock going back in time">
     <div class="lennart-info-div first">
-        <h3 class= "len-h3">title1</h3>
+        <h3 class= "len-h3">First electric cars</h3>
         <p class="len-p">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
-        adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus. <br>
+        The beginning of the electric car dates back to the 19th century where the electric engine was invented  in 1835even before the gasoline engine in 1870 in 1885 the first production car was made 
         <br>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
         adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
