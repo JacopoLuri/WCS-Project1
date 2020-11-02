@@ -29,7 +29,8 @@ body {
    font-weight: 400, 700; 
 /* Having  problems with body position. Doesn't respond well to top: 0 */
    position: relative;
-   top: -40px;     
+   top: -40px;  
+   background-color: #000;   
 }
 
 /* =============
@@ -48,6 +49,7 @@ h2, h3 {
    text-decoration: underline;
    font-size: 2rem;
    margin: 40px 0;
+   color: var(--copper-cryola);
 }
 
 h3 {
@@ -58,6 +60,7 @@ p {
    font-family: 'Montserrat', sans-serif;
    font-size: 1.1rem;
    line-height: 1.5;
+   color: var(--copper-cryola);
 }
 
 
@@ -197,6 +200,7 @@ nav ul li a:hover {
 /* Intro section styling */
 
 #technology--container{
+   /* background-color: #000; */
    position: relative;
    top: 78px;
    margin: 20px 30px;   
@@ -217,11 +221,11 @@ nav ul li a:hover {
    top: 0;
 } */
 
-hr.line--break {
+hr.line--break {   
    margin: 80px 0;
    border: 0;
    height: 1px;
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--copper-cryola), rgba(0, 0, 0, 0));
 }
 
 /* First cars section */
@@ -236,13 +240,14 @@ hr.line--break {
 }
 
 .cards {
-   border: 1px solid #000;
+   border: 1px solid var(--copper-cryola);
    display: flex;
    flex-direction: column;
    justify-content: center;
    padding: 20px;
    border-radius: 5px;
    margin: 40px 0;
+   z-index: 1;
    /* align-items: center; */
 }
 
