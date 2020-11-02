@@ -19,7 +19,7 @@ Large devices (desktops, 992px and up)
 
 pages in project:
 
-0 home
+0 index
 1 about
 2 ecology/technology
 3 models
@@ -31,6 +31,9 @@ font for heading: font-family: 'Dancing Script', cursive;
 
 font for paragraphs: font-family: 'Karla', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+Nice new font for paragraphs: font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 primary color: --bg-primary: #000;
 secondary: --copper-cryola: #da8a68;
