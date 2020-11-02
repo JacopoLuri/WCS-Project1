@@ -1,0 +1,478 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* =============
+   Global styles
+   ============= */
+
+* {   
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+
+/* =============
+   Colour themes
+   ============= */  
+   
+
+   /* Copper and black theme */
+   --bg-primary: #000;   
+   /* --bg-secondary: #006A94;     */
+   --copper-cryola: #da8a68;   
+}
+            
+body { 
+   font-family: 'Karla', sans-serif; 
+   font-size: 16px;  
+   font-weight: 400, 700; 
+/* Having  problems with body position. Doesn't respond well to top: 0 */
+   position: relative;
+   top: -40px;     
+}
+
+/* =============
+   Media Queries
+   ============= */
+
+@media (max-width: 576px) {
+
+/* =============
+   Typography
+   ============= */ 
+
+h2, h3 {
+   font-family: 'Dancing Script', cursive;
+   font-weight: 400;
+   text-decoration: underline;
+   font-size: 2rem;
+   margin: 40px 0;
+}
+
+h3 {
+   font-size: 1.8rem;
+}
+
+p {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.5;
+}
+
+
+/* =============
+   Layout
+   ============= */
+
+/* Navigation styles */
+
+header {
+   display: flex;
+   align-items: center;
+   background: var(--copper-cryola);   
+   position: fixed;
+   top: 0;
+   height: 78px;
+   width: 100vw;
+   z-index: 999;
+}
+
+.logo {
+   width: 50px;
+   margin-left: 10px;
+   /* padding: 25px; */
+}
+
+.nav-toggle {
+   display: none;
+}
+
+.nav-toggle-label {
+   background: var(--copper-cryola);
+   border: 2px solid var(--bg-primary);
+   position: absolute;
+   top: 30%;
+   right: 5%;   
+   padding: 8px 5px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+   display: block;
+   background: var(--bg-primary);
+   height: 2px;
+   width: 17px;
+   border-radius: 2px;
+   position: relative;
+   
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+   content: '';
+   position: absolute;
+}
+
+.nav-toggle-label span::before {
+   bottom: 5px;
+}
+
+.nav-toggle-label span::after {
+   top: 5px;
+}
+
+.desktop-nav {
+   display: none;
+}
+
+.mobile-nav{
+   background-color: var(--bg-primary);
+   background-size: contain;
+   position: absolute;
+   text-align: center;
+   font-size: 1rem;
+   font-weight: 700;
+   top: 100%;
+   left: 0;   
+   min-height: 100vh;
+   width: 100%;
+   transform: scale(1, 0);
+   transform-origin: top;
+   transition: transform 400ms ease-in-out;   
+}
+
+nav ul {  
+   width: 95%; 
+   margin: auto;   
+   list-style: none;
+}
+
+nav ul li {      
+   margin: 15px;
+   padding: 15px;
+   letter-spacing: 2px;    
+}
+
+nav ul li:hover {
+   border: 2px solid var(--copper-cryola);
+}
+
+nav ul li:first-child {
+   margin-top: 30px;
+}
+
+
+nav ul li a {
+    /* This font-family might need changing */
+   font-family: 'Dancing Script', cursive;   
+   color: var(--copper-cryola);
+   text-decoration: underline;
+   font-size: 1.7rem;
+   /* text-transform: uppercase; */
+   opacity: 0;
+   transition: opacity 150ms ease-in-out;
+}
+
+nav ul li a:hover {   
+   cursor: pointer;       
+}
+
+.nav-toggle:checked ~ nav {
+   transform: scale(1, 1);  
+}
+
+.nav-toggle:checked ~ nav a {
+   opacity: 1;
+   transition: opacity .3s ease-in-out .3s;
+}
+/* End of navbar styling */
+
+
+/* Intro section styling */
+
+#technology--container{
+   position: relative;
+   top: 78px;
+   margin: 20px 30px;   
+}
+
+#intro--page{
+   /* height: 100vh; */
+   margin: 100px 0;
+   text-align: center;
+}
+
+/* .color-overlay {
+   position: absolute;
+   width: 100vh;
+   height: 100vw;
+   background: #000;
+   opacity: .6;
+   top: 0;
+} */
+
+hr.line--break {
+   margin: 80px 0;
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* First cars section */
+
+#first--cars, 
+#technological--improvements, 
+#modern--cars {
+   display: flex;
+   flex-direction: column;
+   margin: 40px 0;
+   text-align: center;
+}
+
+.cards {
+   border: 1px solid #000;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+   border-radius: 5px;
+   margin: 40px 0;
+   /* align-items: center; */
+}
+
+.cards img {
+   border-radius: 30px;
+}
+
+p.card--para {
+   font-size: 1.1rem;
+   margin: 20px 0;
+}
+
+
+/* Footer styling */
+
+
+
+
+
+
+
+
+
+/* =============
+   Components
+   ============= */
+
+.card--button {
+   background: var(--copper-cryola);
+   color: #000;
+   border: none;
+   border-radius: 5px;
+   position: relative;
+   height: 40px;
+   /* width: 150px; */
+   font-size: 1rem;
+   padding: 0 20px;
+   cursor: pointer;
+   outline: none;
+   transition: 800ms ease all;   
+   /* box-shadow: 0 5px 15px rgba(0,0,0,0.20);   */
+}
+
+.card--button:hover{
+   background:#fff;
+   color: var(--copper-cryola);
+}
+
+.card--button:before,
+.card--button:after{
+   content:'';
+   position:absolute;
+   top:0;
+   right:0;
+   height:2px;
+   width:0;
+   background: var(--copper-cryola);
+   transition:400ms ease all;
+}
+
+.card--button:after{
+   right:inherit; 
+   top:inherit;
+   left:0;
+   bottom:0;
+}
+
+.card--button:hover:before,
+.card--button:hover:after{
+   width:75%;
+   transition:800ms ease all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Tablet design */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+/* =============
+   Typography
+   ============= */
+
+ 
+
+/* =============
+   Layout
+   ============= */   
+
+.banner-mobile {
+   display: none;  
+}
+
+.banner-desktop {
+   display: block;
+   position: relative;
+   top: 78px;
+   width: 100%;
+}
+
+/* =============
+   Components
+   ============= */
+    
+}
+
+
+
+
+/* Large screens = Laptops, Desktops */
+@media (min-width: 993px) {
+
+/* =============
+   Typography
+   ============= */
+
+
+
+
+/* =============
+   Layout
+   ============= */
+
+/* Navigation styles */
+
+header {
+   background-color: #fff; 
+   display: flex;   
+   position: relative;
+   height: auto;
+   z-index: 999;
+   padding: 30px 100px; 
+}
+
+.nav-toggle,
+.nav-toggle-label,
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+   display: none;
+}
+
+.mobile-nav {
+   display: none;
+}
+
+.desktop-nav {
+   display: block;
+      
+}
+
+.logo {
+   margin-right: auto;
+   padding: 0;
+}
+
+.desktop-nav ul {
+   display: flex;
+   margin-left: auto;
+    
+}
+
+nav ul li {   
+   margin: 0;
+   padding: 0;
+   letter-spacing: 1px;
+   width: 150px;  
+   text-align: center;
+}
+
+nav ul li:first-child {
+   margin-top: auto;
+}
+
+nav ul li:hover {
+   border: none;
+}
+
+nav ul li a {   
+   color: var();   
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   opacity: 1;
+   transition: opacity 150ms ease-in-out;
+   padding: 10px 20px;
+}
+
+nav ul li a:hover {   
+   cursor: pointer; 
+   background-color: var();
+   color: #fff;
+}
+
+
+}
