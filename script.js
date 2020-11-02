@@ -147,13 +147,6 @@ const carList = [
         textLong: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
     },
     {
-        name: 'EQ Concept',
-        brand: 'Mercedes-Benz',
-        img: 'carimages/mercedeseq.jpg',
-        textShort: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
-        textLong: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
-    },
-    {
         name: 'EQC',
         brand: 'Mercedes-Benz',
         img: 'carimages/mercedeseqc.jpg',
