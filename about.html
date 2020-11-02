@@ -56,34 +56,43 @@
 <body>
 <!-- Navigation bars -->
     <!-- Navigation bars -->
-    <header>        
-        <img src="./assets/Background-Photos/logo1.png" class="logo" alt="car-logo">
+    <header>
+      <img src="./assets/Background-Photos/logo1.png" class="logo" alt="car-logo">
+  
+      <!-- Mobile navigation bar -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  
+      <nav class="mobile-nav">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="eco-techno.html">Technology</a></li>
+              <li><a href="models.html">Models</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="funny.html">Funny</a></li>
+          </ul>
+      </nav>
+  
+      <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+      </label>
+  
+  
+      <!-- Desktop navigation bar -->
+      <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="eco-techno.html">Technology</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="funny.html">Funny</a></li>
+          </ul>
+      </nav>
+  
+  </header>
 
-        <!-- Mobile navigation bar -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-
-        <nav class="mobile-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Technology</a></li>              
-                <li><a href="#">Models</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Funny</a></li>
-            </ul>
-        </nav>
-
-        <label for="nav-toggle" class="nav-toggle-label" >
-            <span></span>
-        </label>
-
-
-
-
-    </header>
-
-    <img class=gif src="source\PdGJ.gif" alt="gif-electricity">
-
-    <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div id="carouselHistoryVal" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="source\Tesla-Model-S-2-.jpg" alt="Tesla Model S2">
@@ -106,7 +115,7 @@
       </div>
 
     <!-----spoiler------->
-    <div id="spoiler" style="display: none;">
+    <div id="spoilerHistoryVal" style="display: none;">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. Vel aliquid tempore cupiditate reiciendis. Illo.
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.</div>
         <button title="Click to show/hide content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">first text into button</button>
@@ -117,7 +126,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae adipisc
 <!-- next page to technology -->
 <!-- carousel -->
 
-    <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div id="carouselTechnologyVal" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="source\3D-car-lines-graphic(future).jpg" alt="car graphic">
@@ -139,7 +148,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae adipisc
           </a>
       </div>
     <!-----spoiler------->
-    <div id="spoiler2" style="display:none">
+    <div id="spoilerTechnologyVal" style="display:none">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. Vel aliquid tempore cupiditate reiciendis. Illo.
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.</div>
         <button title="Click to show/hide content"
@@ -165,7 +174,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae adipisc
           
         </div>
             <!-----spoiler------->
-    <div id="spoiler2" style="display:none">
+    <div id="spoilerModelVal" style="display:none">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. Vel aliquid tempore cupiditate reiciendis. Illo.
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.</div>
       <button title="Click to show/hide content"
