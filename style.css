@@ -348,9 +348,45 @@ nav ul li a:hover {
 
 }
 
-    
-/* Models page styling gris layout, responsive*/
+/* Models page hero image top section responsive*/
+.models-hero-container > img {
+   width: 100%;
+   height: auto;
+}
 
+.models-hero-h1 {
+   color: var(--copper-cryola);
+   font-family: 'Dancing Script', cursive;
+   font-weight: 400;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.models-square-grid {
+   width: 100%;
+   height: 200px;
+   background-color: var(--copper-cryola);
+}
+
+.models-square-item > p {
+   flex: 1;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+@media (max-width: 576px) {
+   .models-hero-container {
+      height: 400px;
+      position: relative;
+      top: 78px;
+   }
+}
+
+
+
+
+/* Models page styling gris layout, responsive*/
 
 /* this need to be fixed */
 body {
@@ -364,11 +400,6 @@ body {
    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-@media (max-width: 576px) {
-   .models-h1 {
-      margin-top: 100px;
-   };
-}
 
 .models-h1 {
    color: var(--copper-cryola);
