@@ -14,8 +14,8 @@ Small devices (landscape phones, 576px and up)
 Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
 
-Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+Large devices (desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 
 pages in project:
 
