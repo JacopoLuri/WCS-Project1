@@ -3,33 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
     <title>Models</title>
 </head>
 <body>
-    <nav>PASTE NAV HERE!!!</nav>
+    <!-- Navigation bars -->
+    <header>
+        <img src="./assets/Background-Photos/logo1.png" class="logo" alt="car-logo">
+    
+        <!-- Mobile navigation bar -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eco-techno.html">Technology</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="funny.html">Funny</a></li>
+            </ul>
+        </nav>
+    
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    
+    
+        <!-- Desktop navigation bar -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eco-techno.html">Technology</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="funny.html">Funny</a></li>
+            </ul>
+        </nav>
+    
+    </header>
 
-    <h1>Models</h1>
+    <h1 class="models-h1" >Models</h1>
 
     <!-- card start here -->
-    <img src="https://via.placeholder.com/800x600?text=Electric+car+image" alt="An electric car">
-    <div>DROPDOWN MENU</div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur architecto, dignissimos sit porro ratione accusantium amet corporis culpa quo debitis saepe velit excepturi, molestias corrupti odio quidem vero fuga.</p>
-    <img src="https://via.placeholder.com/200?text=Electric+car+logo" alt="An electric car logo" style="display: block;">
-
-    <!-- card start here -->
-    <img src="https://via.placeholder.com/800x600?text=Electric+car+image" alt="An electric car">
-    <div>DROPDOWN MENU</div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur architecto, dignissimos sit porro ratione
-        accusantium amet corporis culpa quo debitis saepe velit excepturi, molestias corrupti odio quidem vero fuga.</p>
-    <img src="https://via.placeholder.com/200?text=Electric+car+logo" alt="An electric car logo" style="display: block;">
-
-    <!-- card start here -->
-    <img src="https://via.placeholder.com/800x600?text=Electric+car+image" alt="An electric car">
-    <div>DROPDOWN MENU</div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur architecto, dignissimos sit porro ratione
-        accusantium amet corporis culpa quo debitis saepe velit excepturi, molestias corrupti odio quidem vero fuga.</p>
-    <img src="https://via.placeholder.com/200?text=Electric+car+logo" alt="An electric car logo" style="display: block;">
+    <div id="models-card-template" class="models-grid">
+        <!-- filled with js -->
+   </div>
 
     <footer>PASTE FOOTER HERE!!!</footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- script.js link -->
+    <script src="script.js"></script>
 </body>
 </html>
