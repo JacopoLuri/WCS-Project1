@@ -28,11 +28,9 @@ body {
    font-weight: 400, 700;       
 }
 
-/* =============
-   Media Queries
-   ============= */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) { */
+   /* Global style - Mobile first design */
 
 /* =============
    Typography
@@ -44,7 +42,7 @@ h1 {
 }
 
 .banner h1 {
-   font-size: 2.8rem;
+   font-size: 3.2rem;
    color: var(--copper-cryola);
    line-height: 1;
    z-index: 1;   
@@ -208,7 +206,7 @@ nav ul li a:hover {
    text-align: center;
    height: 100vh;
    width: 100vw;  
-   transform: scale(1.2); 
+   /* transform: scale(1.2);  */
 }
 
 .color-overlay {
@@ -220,7 +218,13 @@ nav ul li a:hover {
    top: 0;
 }
 
-}
+/* } */
+
+
+
+/* =============
+   Media Queries
+   ============= */
 
 /* Tablet design */
 
@@ -230,22 +234,50 @@ nav ul li a:hover {
    Typography
    ============= */
 
- 
+.banner h1 {
+   font-size: 5rem; 
+   margin: 100px;     
+} 
 
 /* =============
    Layout
-   ============= */   
+   ============= */  
 
-.banner-mobile {
-   display: none;  
+/* Navbar styles */
+nav ul li a {
+   font-size: 2.5rem; 
 }
 
-.banner-desktop {
-   display: block;
-   position: relative;
-   top: 78px;
-   width: 100%;
+
+
+/* Landing page styles */
+.logo {
+   width: 70px;
+   margin-left: 40px;   
 }
+
+
+.banner {   
+   background-image: url(./assets/Background-Photos/background-tablet2.jpg);   
+   background-size: cover;
+   background-repeat: no-repeat; 
+   background-position: center;     
+   position: relative;     
+   height: 100vh;
+   width: 100vw;     
+}
+
+.color-overlay { 
+   opacity: .7;   
+}
+
+
+   
+
+
+
+
+
 
 /* =============
    Components
