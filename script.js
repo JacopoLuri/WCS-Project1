@@ -35,13 +35,6 @@ const carList = [
         textLong: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
     },
     {
-        name: 'C-Zero',
-        brand: 'Citroen',
-        img: 'carimages/czero.jpg',
-        textShort: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
-        textLong: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
-    },
-    {
         name: 'e208',
         brand: 'Peugeot',
         img: 'carimages/e208.jpg',
@@ -260,6 +253,12 @@ const carList = [
     },
 ];
 
+for (let i = 0; i < carList.length; i++) {
+    
+    
+}
+
+
 let cardContainer = document.getElementById('models-card-template');
 let cardToHtml = '';
 
@@ -273,13 +272,37 @@ for (let i=0; i<carList.length; i++) {
                 <div class="card-body models-cardcolor models-textcentered models-cardwidth" stle>
                     <h5 class="card-title models-biggerfont">${carList[i].name}</h5>
                     <h5 class="card-title models-biggerfont">${carList[i].brand}</h5>
-                    <p id="card-text-short" class="card-text">${carList[i].textShort}</p>
+                    <p class="card-text">${carList[i].textShort}</p>
                     <div class="models-cardwidth models-cardcolorinverted">
-                        <a href="#" class="models-biggerfont models-btn models-cardcolorinverted">Discover</a>
+                        <a href="#" class="models-biggerfont models-btn models-cardcolorinverted" data-toggle="modal" data-target="#exampleModalCenter${i}">Discover</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-card">
+            <div class="card-body models-cardcolorinverted models-textcentered">
+                <h5 class="card-title modal-title">${carList[i].name}</h5>
+                <h5 class="card-title modal-title">${carList[i].brand}</h5>
+            </div>
+            <div class="modal-body models-cardcolor">
+                <img class="card-img-top modal-img"
+                    src= ${carList[i].img}
+                    alt="An electric car">
+                    <p class="card-text">${carList[i].textLong}</p>  
+            </div>
+            <div class="modal-footer models-cardcolorinverted">
+                <p class="models-biggerfont models-btn models-cardcolorinverted" data-dismiss="modal">Close</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
     `;
     cardContainer.innerHTML = cardToHtml;
 };
