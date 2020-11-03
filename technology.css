@@ -33,11 +33,8 @@ body {
    background-color: #000;   
 }
 
-/* =============
-   Media Queries
-   ============= */
 
-@media (max-width: 576px) {
+/* Global styles */
 
 /* =============
    Typography
@@ -199,8 +196,7 @@ nav ul li a:hover {
 
 /* Intro section styling */
 
-#technology--container{
-   /* background-color: #000; */
+#technology--container{   
    position: relative;
    top: 78px;
    margin: 20px 30px;   
@@ -247,8 +243,7 @@ hr.line--break {
    padding: 20px;
    border-radius: 5px;
    margin: 40px 0;
-   z-index: 1;
-   /* align-items: center; */
+   z-index: 1;   
 }
 
 .cards img {
@@ -262,12 +257,6 @@ p.card--para {
 
 
 /* Footer styling */
-
-
-
-
-
-
 
 
 
@@ -322,81 +311,64 @@ p.card--para {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+/* =============
+   Media Queries
+   ============= */
 
 /* Tablet design */
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
 /* =============
    Typography
    ============= */
 
- 
+h2, h3 {
+   font-size: 2.5rem;
+} 
+
+p {
+   font-size: 1.2rem;
+}
 
 /* =============
    Layout
    ============= */   
 
-.banner-mobile {
-   display: none;  
+/* Navbar styles */
+
+.logo {
+   width: 70px;
+   margin-left: 40px;   
 }
 
-.banner-desktop {
-   display: block;
-   position: relative;
-   top: 78px;
-   width: 100%;
+nav ul li a {
+   font-size: 2.5rem; 
 }
 
-/* =============
-   Components
-   ============= */
-    
+/* Landing page styles */
+#intro--page {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0;
+   /* margin-top: 150px; */
+   height: 70vh;
+   padding: 0 100px;
 }
 
+#first--cars, 
+#technological--improvements, 
+#modern--cars {
+   padding: 0 100px;
+}
+
+}
 
 
 
 /* Large screens = Laptops, Desktops */
-@media (min-width: 993px) {
+@media (min-width: 1200px) {
 
 /* =============
    Typography
