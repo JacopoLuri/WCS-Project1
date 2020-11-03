@@ -1,14 +1,34 @@
-let myIndex = 0;
-carousel();
-
-function carousel() {
-  let i;
-  let slidesCarousel = document.getElementsByClassName("carouselHistory");
-  for (i = 0; i < slidesCarousel.length; i++) {
-    slidesCarousel[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > slidesCarousel.length) {myIndex = 1}    
-  slidesCarousel[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000); // Change image every 2 seconds
+var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
+var DefaultWhitelist = {
+  // Global attributes allowed on any supplied element below.
+  '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
+  a: ['target', 'href', 'title', 'rel'],
+  area: [],
+  b: [],
+  br: [],
+  col: [],
+  code: [],
+  div: [],
+  em: [],
+  hr: [],
+  h1: [],
+  h2: [],
+  h3: [],
+  h4: [],
+  h5: [],
+  h6: [],
+  i: [],
+  img: ['src', 'srcset', 'alt', 'title', 'width', 'height'],
+  li: [],
+  ol: [],
+  p: [],
+  pre: [],
+  s: [],
+  small: [],
+  span: [],
+  sub: [],
+  sup: [],
+  strong: [],
+  u: [],
+  ul: []
 }
