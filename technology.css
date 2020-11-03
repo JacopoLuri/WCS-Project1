@@ -508,3 +508,36 @@ nav ul li a:hover {
 
 
 }
+
+
+/* footer */
+.footer-ul {
+   background-color: var(--copper-cryola);
+   color: var(--bg-primary);
+   text-align: center;
+   list-style-type: none;
+}
+
+.footer-ul a {
+   color: var(--bg-primary);
+   text-decoration: underline;
+}
+
+.footer-ul a:hover {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footer-ul a:active {
+   color: #fff;
+   text-decoration: none;
+}
+
+@media (min-width: 1199px) {
+   footer {
+      background-color: var(--copper-cryola);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+   } 
+}

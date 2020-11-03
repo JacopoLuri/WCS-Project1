@@ -564,13 +564,14 @@ body {
    -webkit-box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86); 
 
    box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86);
-<<<<<<< HEAD
 }
 
+/* footer */
 .footer-ul {
    background-color: var(--copper-cryola);
    color: var(--bg-primary);
    text-align: center;
+   list-style-type: none;
 }
 
 .footer-ul a {
@@ -588,7 +589,11 @@ body {
    text-decoration: none;
 }
 
-=======
-
+@media (min-width: 1199px) {
+   footer {
+      background-color: var(--copper-cryola);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+   } 
 }
->>>>>>> c0cb1140ed85872f7a707a497a2d647d9087ad85
