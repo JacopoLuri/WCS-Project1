@@ -224,19 +224,15 @@ nav ul li a:hover {
    width: 100%;
    height: 100%;
    background: #000;
-   opacity: .6;
+   opacity: .5;
    top: 0;
 }
-
-
 
 
 
 /* =============
    Media Queries
    ============= */
-
-
 
 /* Tablet design */
 
@@ -271,17 +267,17 @@ nav ul li a {
 
 
 .banner {   
-   background-image: url(./assets/Background-Photos/background-tablet2.jpg);   
+   background-image: url(./assets/Background-Photos/background-mobile.jpg);   
    background-size: cover;
    background-repeat: no-repeat; 
-   background-position: center;     
+   background-position: center;   
    position: relative;     
    height: 100vh;
    width: 100vw;     
 }
 
 .color-overlay { 
-   opacity: .7;   
+   opacity: .5;   
 }
     
 }
@@ -295,7 +291,9 @@ nav ul li a {
    Typography
    ============= */
 
-
+.banner h1 {
+   font-size: 4.5rem;
+}
 
 
 /* =============
@@ -305,12 +303,13 @@ nav ul li a {
 /* Navigation styles */
 
 header {
-   background-color: #fff; 
-   display: flex;   
-   position: relative;
-   height: auto;
+   background-color: var(--copper-cryola);    
+   display: flex; 
+   justify-content: space-between;  
+   /* position: relative; */
+   height: 78px;
    z-index: 999;
-   padding: 30px 100px; 
+   padding: 30px; 
 }
 
 .nav-toggle,
@@ -333,15 +332,16 @@ header {
 .logo {
    margin-right: auto;
    padding: 0;
+   width: 60px;
 }
 
 .desktop-nav ul {
    display: flex;
-   margin-left: auto;
+   /* margin-left: auto; */
     
 }
 
-nav ul li {   
+nav ul li {      
    margin: 0;
    padding: 0;
    letter-spacing: 1px;
@@ -358,9 +358,13 @@ nav ul li:hover {
 }
 
 nav ul li a {   
-   color: var();   
+   font-family: 'Montserrat', sans-serif;
+   color: var(--bg-primary);   
    font-size: 0.8rem;
+   font-style: oblique; 
+   font-weight: 600;
    text-transform: uppercase;
+   text-decoration: none;
    opacity: 1;
    transition: opacity 150ms ease-in-out;
    padding: 10px 20px;
@@ -372,118 +376,193 @@ nav ul li a:hover {
    color: #fff;
 }
 
+/* Landing page styles */
+
+.banner {   
+   background-image: url(./assets/Background-Photos/background-desktop3.jpg);          
+}
+
+.color-overlay { 
+   opacity: .5;   
+}
+
 
 }
 
 /* Models page hero image top section responsive*/
 
 .models-hero-container > img {
+
    width: 100%;
+
    height: auto;
+
 }
 
 .models-hero-h1,
+
 .models-hero-h2 {
+
    color: var(--copper-cryola);
+
    font-family: 'Dancing Script', cursive;
+
    padding: 1rem;
+
    background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .models-hero-h1 {
+
    font-weight: 400;
+
    padding-top: 100px;
+
    text-align: center;
+
 }
 
 .models-hero-h2 {
+
    font-weight: 300;
+
 }
 
 .models-hero-container > p {
+
    color: var(--copper-cryola);
+
    padding-left: 2rem;
+
    padding-right: 2rem;
+
    text-align: justify;
+
 }
 
 .models-hero-signature {
+
    font-style: italic;
+
 }
 
 hr.models-break {   
-   margin: 25px 0;
-   border: 0;
-   height: 1px;
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--copper-cryola), rgba(0, 0, 0, 0));
-}
 
+   margin: 25px 0;
+
+   border: 0;
+
+   height: 1px;
+
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--copper-cryola), rgba(0, 0, 0, 0));
+
+}
 
 /* Models page styling gris layout, responsive*/
 
 /* this need to be fixed */
+
 body {
+
    background-color: #000 !important;
+
 }
+
 /* fix code above */
 
 .models-grid {
-   display: grid;
-   gap: 2rem;
-   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
 
+   display: grid;
+
+   gap: 2rem;
+
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
 
 .models-h1 {
+
    color: var(--copper-cryola);
+
    font-family: 'Dancing Script', cursive;
+
    font-weight: 400;
+
    text-align: center;
+
    margin-bottom: 25px;
+
 }
 
-
 .models-cardwidth {
+
    width: 100%; 
+
    max-width: 600px;
+
 }
 
 .models-font {
+
    font-family: 'Montserrat', sans-serif;
+
    font-size: 1.1rem;
+
 }
 
 .models-textcentered {
+
    text-align: center;
+
 }
 
 .models-cardcolor {
+
    background-color: var(--bg-primary);
+
    color: var(--copper-cryola);
+
 }
 
 .models-cardcolorinverted {
+
    background-color: var(--copper-cryola);
+
    color: #000;
+
 }
 
 .models-biggerfont {
+
    font-size: 1.5rem;
+
    font-weight: bold;
+
 }
 
 .models-btn:hover {
+
    color: #fff;
+
    text-decoration: none;
+
 }
 
 .models-btn:active {
+
    color: #fff;
+
    text-decoration: none;
+
 }
 
 .models-boxshadow {
+
    border: 1px solid black;
+
    -webkit-box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86); 
+
    box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86);
+
 }
