@@ -374,7 +374,15 @@ nav ul li a {
    Typography
    ============= */
 
+h2, h3 {
+   font-size: 3rem;
+}
 
+#intro--page h2, 
+#intro--page p {
+   color: var(--bg-primary);
+   padding: 0 10%;   
+}
 
 
 /* =============
@@ -384,12 +392,13 @@ nav ul li a {
 /* Navigation styles */
 
 header {
-   background-color: #fff; 
-   display: flex;   
-   position: relative;
-   height: auto;
+   background-color: var(--copper-cryola);    
+   display: flex; 
+   justify-content: space-between;  
+   /* position: relative; */
+   height: 78px;
    z-index: 999;
-   padding: 30px 100px; 
+   padding: 30px; 
 }
 
 .nav-toggle,
@@ -412,15 +421,16 @@ header {
 .logo {
    margin-right: auto;
    padding: 0;
+   width: 60px;
 }
 
 .desktop-nav ul {
    display: flex;
-   margin-left: auto;
+   /* margin-left: auto; */
     
 }
 
-nav ul li {   
+nav ul li {      
    margin: 0;
    padding: 0;
    letter-spacing: 1px;
@@ -437,9 +447,13 @@ nav ul li:hover {
 }
 
 nav ul li a {   
-   color: var();   
+   font-family: 'Montserrat', sans-serif;
+   color: var(--bg-primary);   
    font-size: 0.8rem;
+   font-style: oblique; 
+   font-weight: 600;
    text-transform: uppercase;
+   text-decoration: none;
    opacity: 1;
    transition: opacity 150ms ease-in-out;
    padding: 10px 20px;
@@ -450,6 +464,47 @@ nav ul li a:hover {
    background-color: var();
    color: #fff;
 }
+
+
+/* Technology intro page styling */
+
+#intro--page {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0;
+   /* margin-top: 150px; */
+   height: 85vh;
+   padding: 0 100px;
+   background-image: url('./assets/Background-Photos/power-plant.jpg');
+   background-size: cover;
+   background-repeat: no-repeat; 
+   background-position: center;
+   /* background-blend-mode: screen; */
+}
+
+/* .color-overlay {
+   position: absolute;
+   width: 100vh;
+   height: 100vw;
+   background: #000;
+   opacity: .6;
+   top: 0;
+} */
+
+#first--cars, 
+#technological--improvements, 
+#modern--cars {
+   padding: 0 100px;
+}
+
+
+
+
+
+
+
 
 
 }
