@@ -487,3 +487,25 @@ body {
    -webkit-box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86); 
    box-shadow: 10px 8px 29px -8px rgba(255,255,204,0.86);
 }
+
+.footer-ul {
+   background-color: var(--copper-cryola);
+   color: var(--bg-primary);
+   text-align: center;
+}
+
+.footer-ul a {
+   color: var(--bg-primary);
+   text-decoration: underline;
+}
+
+.footer-ul a:hover {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footer-ul a:active {
+   color: #fff;
+   text-decoration: none;
+}
+
