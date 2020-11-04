@@ -507,10 +507,16 @@ nav ul li a:hover {
 
 #first--cars, 
 #technological--improvements, 
-#modern--cars {
-   padding: 0 100px;
+#modern--cars { 
+   /* margin: 0 5%;   */
+   padding: 0;
    flex-direction: row;
-   justify-content: space-between;
+   align-items: center;
+   /* justify-content: center;    */
+}
+
+#technological--improvements {
+   flex-direction: row-reverse;
 }
 
 .first--cars--description, 
@@ -518,18 +524,52 @@ nav ul li a:hover {
 .modern--cars--description {
    display: flex;
    flex-direction: column;
+   padding: 0 5%;
+   
 }
 
+.cards {
+   width: 550px;   
+   justify-content: center;
+   /* align-items: center; */
+   padding: 20px;   
+   margin: 40px;
+   /* z-index: 1;    */
+}
 
-
-
-
-
+.cards img {
+   border-radius: 30px;
+   width: auto;
+   height: 450px;
+}
 
 }
 
+@media (min-width: 1450px) {
+#first--cars, 
+#technological--improvements, 
+#modern--cars { 
+   margin: 0 10%;  
+   padding: 0;
+   flex-direction: row;
+   align-items: center;
+   /* justify-content: center;    */
+}
 
+#technological--improvements {
+   flex-direction: row-reverse;
+}
 
+.first--cars--description, 
+.technological--description, 
+.modern--cars--description {
+   display: flex;
+   flex-direction: column;
+   /* padding: 0 5%; */
+   
+}
+
+}
 
 
 
