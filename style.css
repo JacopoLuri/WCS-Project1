@@ -591,6 +591,14 @@ body {
    text-align: center;
 }
 
+/* filter */
+
+.filter-container {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
 
 
 
@@ -607,5 +615,9 @@ body {
 @media (max-width: 767px) {
    .modal-img {
       display: none;
+   }
+
+   select {
+      width: 300px !important;
    }
 }
