@@ -60,6 +60,11 @@ p {
    color: var(--copper-cryola);
 }
 
+p.card--para {
+   font-size: 1.1rem;
+   margin: 20px 0;
+}
+
 
 /* =============
    Layout
@@ -235,6 +240,13 @@ hr.line--break {
    text-align: center;
 }
 
+.first--cars--description, 
+.technological--description, 
+.modern--cars--description {
+   display: flex;
+   flex-direction: column;
+}
+
 .cards {
    border: 1px solid var(--copper-cryola);
    display: flex;
@@ -248,15 +260,9 @@ hr.line--break {
 
 .cards img {
    border-radius: 30px;
+   width: 258px;
+   height: 230px;
 }
-
-p.card--para {
-   font-size: 1.1rem;
-   margin: 20px 0;
-}
-
-
-/* Footer styling */
 
 
 
@@ -353,7 +359,7 @@ nav ul li a {
    justify-content: center;
    margin: 0;
    /* margin-top: 150px; */
-   height: 70vh;
+   height: 80vh;
    padding: 0 100px;
 }
 
@@ -361,6 +367,12 @@ nav ul li a {
 #technological--improvements, 
 #modern--cars {
    padding: 0 100px;
+}
+
+.cards img {
+   border-radius: 30px;
+   width: auto;
+   height: 400px;
 }
 
 }
@@ -497,6 +509,15 @@ nav ul li a:hover {
 #technological--improvements, 
 #modern--cars {
    padding: 0 100px;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.first--cars--description, 
+.technological--description, 
+.modern--cars--description {
+   display: flex;
+   flex-direction: column;
 }
 
 
@@ -505,9 +526,11 @@ nav ul li a:hover {
 
 
 
-
-
 }
+
+
+
+
 
 
 /* footer */
