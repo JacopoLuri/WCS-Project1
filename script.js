@@ -253,12 +253,6 @@ const carList = [
     },
 ];
 
-for (let i = 0; i < carList.length; i++) {
-    
-    
-}
-
-
 let cardContainer = document.getElementById('models-card-template');
 let cardToHtml = '';
 
@@ -274,7 +268,7 @@ for (let i=0; i<carList.length; i++) {
                     <h5 class="card-title models-biggerfont">${carList[i].brand}</h5>
                     <p class="card-text">${carList[i].textShort}</p>
                     <div class="models-cardwidth models-cardcolorinverted">
-                        <a href="#" class="models-biggerfont models-btn models-cardcolorinverted" data-toggle="modal" data-target="#exampleModalCenter${i}">Discover</a>
+                        <p class="models-biggerfont models-btn models-cardcolorinverted" data-toggle="modal" data-target="#exampleModalCenter${i}">Discover</p>
                     </div>
                 </div>
             </div>

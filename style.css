@@ -496,7 +496,7 @@ body {
    font-size: 2rem;
    cursor: pointer;
    outline: none;
-   transition: 800ms ease all;   
+   transition: 800ms ease all;  
 }
 
 .models-btn:hover{
