@@ -15,6 +15,8 @@ Get used to time constraints (2 weeks)
 
 Netlify deploy link: 
 
+https://keen-visvesvaraya-52f97b.netlify.app
+
 
 
 Made with ❤ for WCS by: 
