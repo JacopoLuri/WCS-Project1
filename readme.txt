@@ -1,39 +1,24 @@
-Project: History of electric cars
+What was the idea behind this project ..?
 
-wireframe URL:
-https://www.figma.com/file/lqS54H3xqo8ugQTtISsdgm/tesla?node-id=0%3A1
+The idea was created from our passion for cars, history and the environment.
+It all blended together and decided to create something that would be creative and fun, but also something that  would point out the need of solutions and innovation in a world that is rapidly changing, impacting the environment surrounding us.
+We had a lot of ideas that we managed to write down. We created some wireframes that would shape these ideas and give us the workflow we needed. 
 
-task managing app URL:
-https://trello.com/wcsfirstproject/home
+Objectives
 
-media query breakpoints:
+Create a static site with multiple pages
+Put Git and GitHub into practice
+Use apps for workflow
+Learn how to work with a team
+Create an adaptive site (responsive design)
+Get used to time constraints (2 weeks) 
 
-Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+Netlify deploy link: 
 
-Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
 
-Large devices (desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
 
-pages in project:
-
-0 index
-1 about
-2 ecology/technology
-3 models
-4 hystory
-5 funny electric
-
-font for heading: font-family: 'Dancing Script', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
-font for paragraphs: font-family: 'Karla', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-
-Nice new font for paragraphs: font-family: 'Montserrat', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-primary color: --bg-primary: #000;
-secondary: --copper-cryola: #da8a68;
+Made with ❤ for WCS by: 
+Lennart Bleekman 
+Valentin Kolko
+Jacopo Luri
+Ioan Lungu Tranole
