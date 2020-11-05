@@ -4,16 +4,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- font awesome css link (for github iconin footer)-->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="./style.css">
     <title>subpage</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:weight@400;500;600;700&display=swap');
+        .hidden-img {
+            width: 80%;
+            height: auto;
+            border: 3px solid black;
+  display: none;
+}
+ .most-sold-list {
+    padding: 10px;
+    color:  #da8a68;
+    border: 3px solid black;
+ }   
+.most-sold-list:hover + .hidden-img {
+    color:  #da8a68;
+  display: block;
+  position: center;
+  margin: auto;
+}
+h4 {
+    color:  #da8a68;
+}
         body {
-            background-color: #000;
+            
+            background: linear-gradient(120deg, #000000, #242424, #525252);
         }
         h1 {
             font-family: dancing script, cursive;
@@ -28,6 +45,18 @@
             padding: 10px;
             border: 3px double #ffffcc;
             
+        }
+        .len-a {
+            color: #db6b3b;
+        }
+        .len-a:visited {
+            text-decoration: none;
+            color: #db6b3b;
+            
+        }
+        .len-a:hover {
+            background-color: black;
+            text-decoration: none;
         }
         .lennart-img {
             display: block;
@@ -45,29 +74,39 @@
             padding: 20px;
             color: #da8a68;
             font-family: 'Karla', sans-serif;
-            
-        }
+        } 
+        
         .len-li {
             padding: 20px;
             color: #da8a68;
             font-family: 'Karla', sans-serif;  
             list-style-type: none;
-        }
+} 
         .len-h3 { 
             color: #da8a68;
 
         }
+        hr.models-break {   
 
-         @media only screen and (min-width: 992px) {
+margin: 25px 0;
+
+border: 0;
+
+height: 1px;
+
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--copper-cryola), rgba(0, 0, 0, 0));
+
+}
+        @media only screen and (min-width: 768px) {
             .lennart-info-div {
-                width: 40%;
+                width: 80%;
                 float: left;
                 margin-left: 100px;
-                margin-bottom: 200px;
+                margin-bottom: 40px;
             }
             .lennart-img {
                 
-                max-width: 30%;
+                max-width: 50%;
                 height: 30%;
                 
                 
@@ -78,11 +117,35 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 
+            }  
+
+        }
+
+         @media only screen and (min-width: 1200px) {
+            .lennart-info-div {
+                width: 40%;
+                float: left;
+                margin-left: 100px;
+                margin-bottom: 200px;
             }
-         
+            .lennart-img {
+                
+                width: 40%;
+                
+                max-width: 900px;
+                
+                
+            }
+            .len-flex {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+            }
+            
                 
             
-        } 
+        }   
         
     </style>
 </head>
@@ -129,71 +192,64 @@
     <!-- main content -->
     
    <h1>funny and interesting facts</h1>
+   <hr class="models-break">
    <div class="len-flex">
-   <img class="lennart-img one" src="https://cdn.mos.cms.futurecdn.net/9fXs6VTtvcuokKj6zMW4WT-1200-80.jpg" alt="electric car in space">
+   <img class="lennart-img one" src="https://cnet1.cbsistatic.com/img/4ekxaDj9MthNJapATaxjnAcYnwo=/940x0/2019/02/14/aa7a42d0-e7e8-4ee1-be29-8969772e296f/tesla-dog-mode.jpg" alt="tesla dog mode">
     <div class="lennart-info-div first">
-        <h3 class= "len-h3">title1</h3>
+        <h3 class= "len-h3">Did you know?
+        </h3>
         <p class="len-p">
             <ul>
-                <li class="len-li">pelectric cars aren't new at all, there were electric cars in 19th century</li>
+                <li class="len-li">electric cars aren't new at all, there were electric cars in 19th century</li>
                 <li class="len-li">electric cars are known to be silent. so manufactures are required to add a "engine noise" </li>
                 <li class="len-li">tesla has a so called "dog mode" to keep the car cool and displays a message that the dog is comfortable </li>
                 <li class="len-li">there are more then 170.000 electric charging spots! that is more then the amount of petrol stations. </li>
             </ul>
         </p>
     </div>
-    <img class="lennart-img two" src="https://cnet1.cbsistatic.com/img/4ekxaDj9MthNJapATaxjnAcYnwo=/940x0/2019/02/14/aa7a42d0-e7e8-4ee1-be29-8969772e296f/tesla-dog-mode.jpg" alt="tesla dog mode">
+    <img class="lennart-img two" src="https://cdn.mos.cms.futurecdn.net/9fXs6VTtvcuokKj6zMW4WT-1200-80.jpg"  alt="electric car in space">
+    <hr class="models-break">
     <div class="lennart-info-div second">
-        <h3 class= "len-h3">title1</h3>
-    <p class="len-p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
-        fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
-        Vel aliquid tempore cupiditate reiciendis. Illo.<br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
-        adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.</p> 
+        <h3 class= "len-h3">Tesla in space</h3>
+    <p class="len-p">On the 6th of februari a Tesla Roadster was launched into space with help of a rocket the so called: Falcon Heavy FH-001. Inside the car there is a mannequin who goes by the name "Starman" inspired by the song of 
+        David Bowie. The audio system in the vehicle continuously plays the song "space oddity" also by David Bowie. <br><br> The Car is currently <a class="len-a"href="https://www.whereisroadster.com/charts/" target="_blank">here</a>
+    </p> 
     </div>
     <img class="lennart-img three" src="https://specials-images.forbesimg.com/imageserve/5f401a260ff9e641a5083a3b/960x0.jpg?fit=scale" alt="modern electric car">
+    <hr class="models-break">
     <div class="lennart-info-div third">
-        <h3 class= "len-h3">title1</h3>
-        <p class="len-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
-        fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
-        Vel aliquid tempore cupiditate reiciendis. Illo.<br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
-        adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
-        fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
-        Vel aliquid tempore cupiditate reiciendis. Illo.<br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae 
-        adipisci ipsam ex! Fugiat, saepe, perspiciatis, incidunt provident dolorum omnis 
-        laborum earum eveniet harum pariatur itaque officia tenetur in ducimus.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor labore deleniti, 
-        fugit voluptate excepturi corrupti ipsa ullam nisi quos dignissimos alias et quidem voluptates. 
-        Vel aliquid tempore cupiditate reiciendis. Illo.</p>
+        <h3 class= "len-h3">Most sold electric cars</h3>
+        <h4>Hover or touch names!</h4>
+        <p class="len-p">           
+            
+                <p class="most-sold-list">Tesla Model 3 - 645,000</p>
+                <img class="hidden-img" src="https://www.tesla.com/sites/default/files/images/model-3/model-3-hero.jpg?2017" alt="tesla model 3">
+                <p class="most-sold-list">Nissan LEAF - 490,000</p>
+                <img class="hidden-img" src="https://cnet2.cbsistatic.com/img/446RoFPuMPeuvNtQ9-8urF0Xhv4=/1200x675/2019/04/06/2315f6fd-f122-4df7-8e62-9aedec29c03b/2019-nissan-leaf-plus-27.jpg" alt="Nissan leaf">
+                <p class="most-sold-list">Tesla Model S - 305,000</p>
+                <img class="hidden-img" src="https://tesla-cdn.thron.com/delivery/public/image/tesla/35d15221-0a5f-4dce-b484-a4db67b81dd2/bvlatuR/std/0x0/model-s@2x" alt="tesla model s">
+                <p class="most-sold-list">Renault ZOE - 231,000</p>
+                <img class="hidden-img" src="https://www.tesla.com/sites/default/files/images/model-3/model-3-hero.jpg?2017" alt="Renault ZOE">
+                <p class="most-sold-list">BAIC EC-Series - 203,000</p>
+                <img class="hidden-img" src="https://carsalesbase.com/wp-content/uploads/2017/01/Auto-sales-statistics-China-BAIC-EC180-EV.png" alt="BAIC EC-Series">
+                <p class="most-sold-list">BAIC EU-Series - 196,000</p>
+                <img class="hidden-img" src="https://c2.gasgoo.com/autonews/moblogo/News/UEditor/600-X/20190423/6369162792272648188526395.png" alt="BAIC EU-Series">
+                <p class="most-sold-list">BMW i3 - 191,000</p>
+                <img class="hidden-img" src="https://e-drivers.com/wp-content/uploads/2020/04/bmw-i3-review-max-erich.jpg" alt="BMW i3">
+                <p class="most-sold-list">Tesla Model X - 177,000</p>
+                <img class="hidden-img" src="https://www.tesla.com/sites/default/files/images/charging/model-x-range-desktop.png" alt="Tesla Model X">
+                <p class="most-sold-list">Chery eQ - 139,000</p>
+                <img class="hidden-img" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Chery_eQ1_001.jpg" alt="Chery eQ">
+                <p class="most-sold-list">Volkswagen e-Golf - 136,000</p>
+                <img class="hidden-img" src="https://electrek.co/wp-content/uploads/sites/3/2017/09/2017_e-golf_70401-e1505411891496.jpg?quality=82&strip=all&w=1600" alt="Volkswagen e-Golf">
+
+
+           
+        </p>
     </div>
 
 </div>
-    <!-- Footer section -->
-    <hr class="models-break">
-    <footer>
-        <ul class="footer-ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="eco-techno.html">Technology</a></li>
-            <li><a href="models.html">Models</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="funny.html">Funny</a></li>
-        </ul>
-        <ul class="footer-ul">
-            <li>© 2020 The History of electric cars</li>
-            <li>Made with love for WCS</li>
-            <li>Lennart Bleekman <a href="https://github.com/Lennart-bman" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i> Lennart-bman</a></li>
-            <li>Valentin Kolko <a href="https://github.com/valiant9191" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i> valiant9191</a></li>
-            <li>Jacopo Luri <a href="https://github.com/JacopoLuri" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i> JacopoLuri</a></li>
-            <li>Ioan Lungu Tranole <a href="https://github.com/IoanLT" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i> IoanLT</a></li>
-        </ul>
-    </footer>
+<hr class="models-break">
+    <!-- footer -->
 </body>
 </html>
