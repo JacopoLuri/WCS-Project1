@@ -29,7 +29,7 @@ body {
    font-weight: 400, 700; 
 /* Having  problems with body position. Doesn't respond well to top: 0 */
    position: relative;
-   top: -40px;  
+   /* top: -40px;   */
    background-color: #000;   
 }
 
@@ -53,11 +53,22 @@ h3 {
    font-size: 1.8rem;
 }
 
+/* #intro--page h2, 
+#intro--page P {
+   margin: 20px 80px;
+   z-index: 999;
+} */
+
 p {
    font-family: 'Montserrat', sans-serif;
    font-size: 1.1rem;
    line-height: 1.5;
    color: var(--copper-cryola);
+}
+
+p.card--para {
+   font-size: 1.1rem;
+   margin: 20px 0;
 }
 
 
@@ -209,11 +220,12 @@ nav ul li a:hover {
 }
 
 /* .color-overlay {
+   display: none;
    position: absolute;
-   width: 100vh;
-   height: 100vw;
+   width: 100%;
+   height: 85vh;
    background: #000;
-   opacity: .6;
+   opacity: .7;
    top: 0;
 } */
 
@@ -231,8 +243,15 @@ hr.line--break {
 #modern--cars {
    display: flex;
    flex-direction: column;
-   margin: 40px 0;
+   margin: 100px 0;
    text-align: center;
+}
+
+.first--cars--description, 
+.technological--description, 
+.modern--cars--description {
+   display: flex;
+   flex-direction: column;
 }
 
 .cards {
@@ -240,7 +259,7 @@ hr.line--break {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 20px;
+   padding: 25px;
    border-radius: 5px;
    margin: 40px 0;
    z-index: 1;   
@@ -248,15 +267,13 @@ hr.line--break {
 
 .cards img {
    border-radius: 30px;
+   width: 258px;
+   height: 190px;
 }
 
-p.card--para {
-   font-size: 1.1rem;
-   margin: 20px 0;
+.card3 img {
+   height: 240px;
 }
-
-
-/* Footer styling */
 
 
 
@@ -310,6 +327,10 @@ p.card--para {
    transition:800ms ease all;
 }
 
+footer ul {
+   padding: 10px;
+}
+
 
 /* =============
    Media Queries
@@ -331,6 +352,18 @@ p {
    font-size: 1.2rem;
 }
 
+#intro--page h2, 
+#intro--page P {
+   margin: 20px 80px;
+   z-index: 1;
+}
+
+p.card--para, 
+.card--button {
+   font-size: 1.2rem;
+   margin: 20px 0;
+}
+
 /* =============
    Layout
    ============= */   
@@ -347,20 +380,61 @@ nav ul li a {
 }
 
 /* Landing page styles */
+
+#technology--container{  
+   margin: 0;   
+}
+
 #intro--page {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin: 0;
-   /* margin-top: 150px; */
-   height: 70vh;
-   padding: 0 100px;
+   margin: 0;   
+   height: 85vh;
+   background-image: url('./assets/Background-Photos/power-plant.jpg');
+   background-size: cover;
+   background-repeat: no-repeat; 
+   background-position: center;
+   /* padding: 0 100px; */
+}
+
+.color-overlay {
+   position: absolute;
+   width: 100vw;
+   height: 85vh;
+   background: #000;
+   opacity: .7;
+   top: 0;
+   
 }
 
 #first--cars, 
 #technological--improvements, 
 #modern--cars {
    padding: 0 100px;
+   margin: 100px 0;
+}
+
+.cards img {
+   border-radius: 30px;
+   width: auto;
+   height: 400px;
+}
+
+.card3 img {
+   height: 450px;
+}
+
+footer {
+   background-color: var(--copper-cryola);
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+   padding: 10px;
+} 
+
+footer li {
+   font-size: 1.1rem;
 }
 
 }
@@ -380,8 +454,9 @@ h2, h3 {
 
 #intro--page h2, 
 #intro--page p {
-   color: var(--bg-primary);
-   padding: 0 10%;   
+   color: var(--copper-cryola);
+   padding: 0 10%;  
+   z-index: 1; 
 }
 
 
@@ -468,47 +543,110 @@ nav ul li a:hover {
 
 /* Technology intro page styling */
 
+#technology--container{  
+   margin: 0;   
+}
+
 #intro--page {
    position: relative;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin: 0;
-   /* margin-top: 150px; */
-   height: 85vh;
-   padding: 0 100px;
+   margin: 0;   
+   height: 85vh;   
    background-image: url('./assets/Background-Photos/power-plant.jpg');
    background-size: cover;
    background-repeat: no-repeat; 
    background-position: center;
-   /* background-blend-mode: screen; */
+   
 }
 
-/* .color-overlay {
+.color-overlay {
    position: absolute;
-   width: 100vh;
-   height: 100vw;
+   width: 100%;
+   height: 100%;
    background: #000;
-   opacity: .6;
+   opacity: .7;
    top: 0;
-} */
+   
+}
 
 #first--cars, 
 #technological--improvements, 
-#modern--cars {
-   padding: 0 100px;
+#modern--cars {    
+   padding: 0;
+   flex-direction: row;
+   align-items: center;
+   margin: 100px 0;
+   
+}
+
+#technological--improvements {
+   flex-direction: row-reverse;
+}
+
+.first--cars--description, 
+.technological--description, 
+.modern--cars--description {
+   display: flex;
+   flex-direction: column;
+   padding: 0 5%;
+   
+}
+
+.cards {
+   width: 550px;   
+   justify-content: center;   
+   padding: 20px;   
+   margin: 40px;
+   
+}
+
+.cards img {
+   border-radius: 30px;
+   width: auto;
+   height: 400px;
+}
+
 }
 
 
 
 
+@media (min-width: 1450px) {
 
+#technology--container{  
+   margin: 0;   
+}
 
+#first--cars, 
+#technological--improvements, 
+#modern--cars { 
+   margin: 100px 10%;  
+   padding: 0;
+   flex-direction: row;
+   align-items: center;
+   /* margin: 100px 0;    */
+}
 
+#technological--improvements {
+   flex-direction: row-reverse;
+}
 
+.first--cars--description, 
+.technological--description, 
+.modern--cars--description {
+   display: flex;
+   flex-direction: column;
+   /* padding: 0 5%; */
+   
+}
 
 }
 
+
+
+/* Jacopo's section */
 
 /* footer */
 .footer-ul {
@@ -539,5 +677,10 @@ nav ul li a:hover {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-evenly;
+      padding: 10px;
    } 
+
+   footer li {
+      font-size: 1.1rem;
+   }
 }

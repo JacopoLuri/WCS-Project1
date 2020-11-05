@@ -246,63 +246,107 @@ const carList = [
     },
     {
         name: 'Zoe',
-        brand: 'Renualt',
+        brand: 'Renault',
         img: 'carimages/zoe.jpg',
         textShort: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
         textLong: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit.Laboriosam, eaque dolorum cumque officia maiores iure officiis itaque beatae voluptatem consequuntur.',
     },
 ];
 
-for (let i = 0; i < carList.length; i++) {
-    
-    
+// Brands filter
+let filterContainer = document.getElementById('filter-template');
+let filterToHtml = '';
+let brandArray = [];
+
+function showFilterList(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (brandArray.includes(array[i].brand) === false){
+            brandArray.push(array[i].brand);
+        };
+    };
+    for (let j = 0; j < brandArray.length; j++) {
+        filterToHtml += `
+                <select>
+                    <option value="${brandArray[j]}">${brandArray[j]}</option>
+                </select> 
+            `;
+    };
+    filterContainer.innerHTML = `
+                <select>
+                    <option value="All">All</option>
+                </select> 
+            ` + filterToHtml;
+};
+showFilterList(carList);
+
+let selector = document.getElementById('filter-template');
+let filteredCards = [];
+
+selector.addEventListener('click', function(event){
+    filteredCards = [];
+    for (let j = 0; j<carList.length; j++) {
+        if(carList[j].brand === event.target.value) {
+            filteredCards.push(carList[j])
+        } else if ('All' === event.target.value) {
+            filteredCards = carList;
+        }
+    }
+    showCardList(filteredCards);
+    resetFilteredContainer();
+})
+
+// resetter
+
+function resetFilteredContainer() {
+    cardToHtml= '';
 }
 
-
+//  Cards
 let cardContainer = document.getElementById('models-card-template');
 let cardToHtml = '';
 
-for (let i=0; i<carList.length; i++) {
-    cardToHtml += `
-        <div class="models-container models-font models-boxshadow" style="max-width: fit-content;">
-            <div class="card models-cardwidth">
-                <img class="card-img-top"
-                    src= ${carList[i].img}
-                    alt="An electric car">
-                <div class="card-body models-cardcolor models-textcentered models-cardwidth" stle>
-                    <h5 class="card-title models-biggerfont">${carList[i].name}</h5>
-                    <h5 class="card-title models-biggerfont">${carList[i].brand}</h5>
-                    <p class="card-text">${carList[i].textShort}</p>
-                    <div class="models-cardwidth models-cardcolorinverted">
-                        <a href="#" class="models-biggerfont models-btn models-cardcolorinverted" data-toggle="modal" data-target="#exampleModalCenter${i}">Discover</a>
+function showCardList(array) {
+    for (let i=0; i<array.length; i++) {
+        cardToHtml += `
+            <div class="models-container models-font models-boxshadow" style="max-width: fit-content;">
+                <div class="card models-cardwidth">
+                    <img class="card-img-top"
+                        src= ${array[i].img}
+                        alt="An electric car">
+                    <div class="card-body models-cardcolor models-textcentered models-cardwidth" stle>
+                        <h5 class="card-title models-biggerfont">${array[i].name}</h5>
+                        <h5 class="card-title models-biggerfont">${array[i].brand}</h5>
+                        <p class="card-text">${array[i].textShort}</p>
+                        <div class="models-cardwidth models-cardcolorinverted">
+                            <p class="models-biggerfont models-btn models-cardcolorinverted" data-toggle="modal" data-target="#exampleModalCenter${i}">Discover</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content modal-card">
-            <div class="card-body models-cardcolorinverted models-textcentered">
-                <h5 class="card-title modal-title">${carList[i].name}</h5>
-                <h5 class="card-title modal-title">${carList[i].brand}</h5>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modal-card">
+                <div class="card-body models-cardcolorinverted models-textcentered">
+                    <h5 class="card-title modal-title">${array[i].name}</h5>
+                    <h5 class="card-title modal-title">${array[i].brand}</h5>
+                </div>
+                <div class="modal-body models-cardcolor">
+                    <img class="card-img-top modal-img"
+                        src= ${array[i].img}
+                        alt="An electric car">
+                        <p class="card-text">${array[i].textLong}</p>  
+                </div>
+                <div class="modal-footer models-cardcolorinverted">
+                    <p class="models-biggerfont models-btn models-cardcolorinverted" data-dismiss="modal">Close</p>
+                </div>
+                </div>
             </div>
-            <div class="modal-body models-cardcolor">
-                <img class="card-img-top modal-img"
-                    src= ${carList[i].img}
-                    alt="An electric car">
-                    <p class="card-text">${carList[i].textLong}</p>  
             </div>
-            <div class="modal-footer models-cardcolorinverted">
-                <p class="models-biggerfont models-btn models-cardcolorinverted" data-dismiss="modal">Close</p>
-            </div>
-            </div>
-        </div>
-        </div>
-
-
-
-    `;
-    cardContainer.innerHTML = cardToHtml;
+        `;
+        cardContainer.innerHTML = cardToHtml;
+    };
 };
+
+showCardList(carList);
